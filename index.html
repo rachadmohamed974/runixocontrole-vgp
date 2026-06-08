@@ -252,8 +252,10 @@ textarea{resize:vertical;min-height:70px}
     <div class="panel" id="panel-rapports">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
         <div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px">Rapports VGP</div><div style="font-size:12px;color:var(--muted)">Vérifications Générales Périodiques</div></div>
-        <a href="https://eu1.make.com/527553/scenarios/6055338/edit" target="_blank" class="btn btn-outline" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-size:12px"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Scénario Make VGP</a>
-        <button class="btn btn-blue" onclick="openModal('newVgp')"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Nouveau VGP</button>
+        <div style="display:flex;gap:8px;align-items:center">
+          <a href="https://eu1.make.com/527553/scenarios/6055338/edit" target="_blank" class="btn btn-outline" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-size:12px;border-color:rgba(27,84,232,.3);color:var(--blue)"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Scénario Make</a>
+          <button class="btn btn-blue" onclick="openModal('newVgp')"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Nouveau VGP</button>
+        </div>
       </div>
       <div class="alert ai"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>PDF générés automatiquement via PythonAnywhere et envoyés par email.</div>
       <div class="kpis">
@@ -270,8 +272,10 @@ textarea{resize:vertical;min-height:70px}
 
     <!-- EPI ENTREPRISES -->
     <div class="panel" id="panel-epi_ent">
-      <div style="margin-bottom:16px"><div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:var(--orange)">Entreprises EPI</div><div style="font-size:12px;color:var(--muted)">Lecture seule — base Airtable EPI</div></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:var(--orange)">Entreprises EPI</div><div style="font-size:12px;color:var(--muted)">Lecture seule — base Airtable EPI</div></div>
         <a href="https://eu1.make.com/527553/scenarios/6088913/edit" target="_blank" class="btn btn-outline" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-size:12px;border-color:rgba(217,119,6,.3);color:var(--orange)"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Scénario Make EPI</a>
+      </div>
       <div class="kpis">
         <div class="kpi b"><div class="kpi-l">Entreprises</div><div class="kpi-v" id="kEET">—</div><div class="kpi-s">Dans la base</div></div>
         <div class="kpi o"><div class="kpi-l">Kits totaux</div><div class="kpi-v" id="kEEK">—</div><div class="kpi-s">Antichute</div></div>
@@ -286,8 +290,10 @@ textarea{resize:vertical;min-height:70px}
 
     <!-- EPI SALARIÉS -->
     <div class="panel" id="panel-epi_sal">
-      <div style="margin-bottom:16px"><div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:var(--orange)">Salariés</div><div style="font-size:12px;color:var(--muted)">Lecture seule — base Airtable EPI</div></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:var(--orange)">Salariés</div><div style="font-size:12px;color:var(--muted)">Lecture seule — base Airtable EPI</div></div>
         <a href="https://eu1.make.com/527553/scenarios/6088913/edit" target="_blank" class="btn btn-outline" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-size:12px;border-color:rgba(217,119,6,.3);color:var(--orange)"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Scénario Make EPI</a>
+      </div>
       <div class="kpis">
         <div class="kpi b"><div class="kpi-l">Total salariés</div><div class="kpi-v" id="kEST">—</div><div class="kpi-s">Dans la base</div></div>
         <div class="kpi g"><div class="kpi-l">Avec kit</div><div class="kpi-v" id="kESK">—</div><div class="kpi-s">Kit assigné</div></div>
@@ -302,8 +308,10 @@ textarea{resize:vertical;min-height:70px}
 
     <!-- EPI CONTRÔLES -->
     <div class="panel" id="panel-epi_ctrl">
-      <div style="margin-bottom:16px"><div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:var(--orange)">Contrôles EPI</div><div style="font-size:12px;color:var(--muted)">Lecture seule — base Airtable EPI</div></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:var(--orange)">Contrôles EPI</div><div style="font-size:12px;color:var(--muted)">Lecture seule — base Airtable EPI</div></div>
         <a href="https://eu1.make.com/527553/scenarios/6088913/edit" target="_blank" class="btn btn-outline" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-size:12px;border-color:rgba(217,119,6,.3);color:var(--orange)"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Scénario Make EPI</a>
+      </div>
       <div class="kpis">
         <div class="kpi b"><div class="kpi-l">Total contrôles</div><div class="kpi-v" id="kECT">—</div><div class="kpi-s">Tous statuts</div></div>
         <div class="kpi g"><div class="kpi-l">Rapports générés</div><div class="kpi-v" id="kECG">—</div><div class="kpi-s">PDF disponibles</div></div>
